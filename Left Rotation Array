@@ -1,0 +1,14 @@
+vector<int> rotateLeft(int d, vector<int> arr) {
+    vector<int> m;
+
+    for (std::size_t i = d; i < arr.size(); ++i)
+    {
+        m.push_back(arr[i]);
+    }
+    for (std::size_t i = 0; i < d; ++i)
+    {
+        m.push_back(arr[i]);
+    }
+    return m;
+}
+
