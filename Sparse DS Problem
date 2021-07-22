@@ -1,0 +1,17 @@
+vector<int> matchingStrings(vector<string> strings, vector<string> queries) {
+     vector<int> ans; // for storing the result as a vector
+    int m = strings.size();
+    int n = queries.size();
+    for(int i=0; i<n; i++) //Loop 1st as described above
+    {   int count =0;
+        for(int j=0; j<m; j++) //Loop 2nd as described above
+        {
+            if(strings[j]==queries[i])
+            {
+                count++; // if same increment the value of count
+            }
+        }
+        ans.push_back(count);
+    }
+    return ans;
+}
